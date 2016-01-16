@@ -1,6 +1,10 @@
 {
     "name": "mattyg/fb-privacy-auth",
+    "type": "library",
     "description": "Implement authorisation checks based on the model Facebook uses for privacy controls for content (simple users and groups system).",
+    "keywords": ["auth", "authorisation", "authorization", "privacy", "acl", "users", "groups"],
+    "license": "Unlicense",
+    "homepage": "https://github.com/djmattyg007/fb-privacy-auth",
     "require": {
         "php": "~5.6.0|~7.0.0"
     },

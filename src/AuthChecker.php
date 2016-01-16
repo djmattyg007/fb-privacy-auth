@@ -57,8 +57,8 @@ class AuthChecker
     {
         $allResourceIds = array_keys($this->resources);
         $check = array($this, "check");
-        return array_filter($allResourceIds, function($resourceId) use ($check, $username) {
+        return array_values(array_filter($allResourceIds, function($resourceId) use ($check, $username) {
             return $check($resourceId, $username);
-        });
+        }));
     }
 }
