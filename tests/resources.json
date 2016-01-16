@@ -1,0 +1,72 @@
+{
+    "res1": {
+        "name": "Resource 1",
+        "data": "Dummy Data for Resource 1",
+        "auth": {
+            "allow": {
+                "users": ["user1"],
+                "groups": ["main"]
+            },
+            "deny": {
+                "users": ["user2"],
+                "groups": ["nope"]
+            }
+        }
+    },
+    "res2": {
+        "name": "Resource 2",
+        "data": "Dummy Data for Resource 2",
+        "auth": {
+            "allow": {
+                "users": ["user1"],
+                "groups": ["main"]
+            },
+            "deny": {
+                "users": ["user2", "user3"],
+                "groups": []
+            }
+        }
+    },
+    "res3": {
+        "name": "Resource 3",
+        "data": "Dummy Data for Resource 3",
+        "auth": {
+            "allow": {
+                "users": ["user1", "user3"],
+                "groups": ["main"]
+            },
+            "deny": {
+                "users": ["user2"],
+                "groups": ["nope"]
+            }
+        }
+    },
+    "res4": {
+        "name": "Resource 4",
+        "data": "Dummy Data for Resource 4",
+        "auth": {
+            "allow": {
+                "users": ["user2"],
+                "groups": ["main"]
+            },
+            "deny": {
+                "users": [],
+                "groups": []
+            }
+        }
+    },
+    "res5": {
+        "name": "Resource 5",
+        "data": "Dummy Data for Resource 5",
+        "auth": {
+            "allow": {
+                "users": ["user2", "user3"],
+                "groups": []
+            },
+            "deny": {
+                "users": [],
+                "groups": []
+            }
+        }
+    }
+}
