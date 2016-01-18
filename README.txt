@@ -37,5 +37,21 @@ by iterating over all resources and checking them one by one with the above
 logic. To utilise this, call the getAllowedResourceIds() method and pass it
 a username.
 
+Why should you use this, instead of much more established and well-known
+solutions such as the Zend Acl or Symfony Security packages? Simplicity. Before
+I built this, I evaluated these and a few other potential solutions. I decided
+to build my own because of all the things I didn't want out of an authorization
+system:
+
+- My resources are not hierarchial, nor are they tied to HTTP routes
+- My authentication is already handled elsewhere
+- My users have no behaviours or properties associated with them and therefore
+  are not objects
+- My configuration is in JSON, not YAML
+- My priority is speed, not flexibility
+
+I was unable to find an existing solution that fit all of these criteria before
+building this.
+
 
 This software is released into the public domain without any warranty.
